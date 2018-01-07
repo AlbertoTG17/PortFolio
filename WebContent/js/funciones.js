@@ -7,7 +7,7 @@ $(document).ready(
         	$("h4").mouseenter(seleccionar);
         	$("h4").mouseleave(limpiarFlecha);
         	$(window).resize(cambioResolucion);
-        	
+        	$("#control").click(controlAudio);
         }
 );
 
@@ -77,4 +77,28 @@ function limpiarFlecha() {
 	
 	$("#" + ultimoTituloSeleccionado).css("display","none");
 		
+}
+
+function controlAudio(){
+	
+	var estado = $("#control").attr('class');
+	//alert(estado);
+	
+	if (estado == "fa fa-play") {
+		
+		$("#control").removeClass("fa fa-play");				
+		$("#control").addClass("fa fa-pause");
+		$("#cancion").get(0).play();
+		
+	}else{
+		
+		$("#control").removeClass("fa fa-pause");				
+		$("#control").addClass("fa fa-play");
+		$("#cancion").get(0).pause();
+		
+				
+		
+		
+	}
+	
 }

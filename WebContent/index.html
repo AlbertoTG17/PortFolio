@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+
 <title>AlbertoTG17</title>
 <link rel="shortcut icon" href="img/favicon.ico">
 <!-- Required meta tags -->
@@ -20,6 +21,14 @@
 	rel="stylesheet"
 	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 	crossorigin="anonymous">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112072417-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-112072417-1');
+</script>
+	
 </head>
 
 <body class="container-fluid">
@@ -31,12 +40,18 @@
 		<div class="container-fluid">
 			<!-- barra de navegacion -->
 			
+			<audio style="display: none;" id="cancion">
+					<source src="media/Bohemian_Rhapsody.mp3">
+					<source src="media/Bohemian Rhapsody.ogg">
+			</audio>
+			
 			<div id="presentacion" align="center">	
 				<a onclick="document.getElementById('_1').click();">		
 					<img id="foto" src="img/yo.jpg" class="img-fluid" alt="Responsive image">
 				</a>
 				<h5>ALBERTO TOSTADO GARCÍA</h5>
-				<p>Desarrollador Web.</p>			
+				<p>Desarrollador Web.&nbsp;&nbsp;<i class="fa fa-play" style="cursor: pointer;" id="control"></i></p>
+																		
 			</div>
 			
 			<br/><br/>
@@ -49,7 +64,8 @@
 					</li>
 					<li class="nav-item"><h4 id="_2" class="nav-link">Sobre mí. <i class="flechas" id="flecha_2"> >> </i> </h4></li>
 					<li class="nav-item"><h4 id="_3" class="nav-link">Skills <i class="flechas" id="flecha_3"> >> </i> </h4></li>
-					<li class="nav-item"><h4 id="_4" class="nav-link">Contacto <i class="flechas" id="flecha_4"> >> </i> </h4></li>				
+					<li class="nav-item" title="En construccion"><h4 id="_4" class="nav-link">Portfolio <i class="flechas" id="flecha_4"> >> </i> </h4></li>	
+					<li class="nav-item"><h4 id="_5" class="nav-link">Contacto <i class="flechas" id="flecha_5"> >> </i> </h4></li>			
 				</ul>	
 			
 			</nav>
@@ -60,10 +76,10 @@
 				<div class="row">
 					<div class="col" align="left">&copy;AlbertoTG17</div>
 					<div class="col" align="right">
-						<a href="mailto:albertotg17@gmail.com" target="_blank"><i class="icon fa fa-envelope"></i></a>
-						<a href="https://www.facebook.com/alberto.tostadogarcia.5" target="_blank"><i class="fa fa-facebook-official"></i></a>
-						<a href="https://github.com/AlbertoTG17" target="_blank"><i class="fa fa-github"></i></a>
-						<a href="" target="_blank"><i class="fa fa-linkedin" ></i></a>
+						<a href="mailto:albertotg17@gmail.com" target="_blank"><i style="color: black;" class="icon fa fa-envelope"></i></a>
+						<a href="https://www.facebook.com/alberto.tostadogarcia.5" target="_blank"><i style="color: black;" class="fa fa-facebook-official"></i></a>
+						<a href="https://github.com/AlbertoTG17" target="_blank"><i style="color: black;" class="fa fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/alberto-tostado-garc%C3%ADa-10408a155/" target="_blank"><i style="color: black;" class="fa fa-linkedin"></i></a>
 					</div>
 				</div>
 				
@@ -79,28 +95,56 @@
 
 			<article id="capa_1">
 				
-				<div style="width: 50%">			
+							
 			
-				<h2 style="font-size: 1.7rem;" class="colorMenu">Hola, soy Alberto.</h2> <br/>
+				<h2 class="titulo">Hola, soy Alberto.</h2> <br/>
 				
 				<p>Soy un estudiante de desarrollo web en <b>front-end</b> y <b>back-end</b>.</p>
 				
 				<p>
 				
 					Puedes saber mas <a onclick="document.getElementById('_2').click();"><i>sobre mí</i></a>
-					y mis <a onclick="document.getElementById('_3').click();"><i> habilidades </i></a>, aunque todavia no haya mucho que contar.
+					y mis <a onclick="document.getElementById('_3').click();"><i> skills </i></a>, aunque todavia no haya mucho que contar.
 					<img alt="emoji" src="img/Emoji.png" width="22px"/>
 				
 				</p>
-				
-				</div>
-				
-			
+
 			</article>
 
-			<article id="capa_2" class="capaDinamica" style="font-size: 200px;">
-				b b b b b b
-				<img alt="fondo" src="img/zelda gb graffiti.jpg">
+			<article id="capa_2" class="capaDinamica">						
+				
+				<h2 class="titulo">Sobre mí. </h2> <br/>
+				
+				<h3 style="color: red">Fecha de nacimiento</h3>
+				<span>27/03/1993</span>	<br/><br/>
+				
+				<h3 style="color: red;">Ciudad</h3>
+				<span>Madrid, España</span> 
+				
+				<br/><br/>
+				
+				<h3 style="color: red;">Descripcion</h3>
+				
+				<p>
+				
+					"Llevo tres años en el mundo de la progamación y el desarrollo un poco por causalidad, 
+					al principio no fue fácil y creía que era otra equivocación mas pero día a día 
+					descubrí que ratos de sufrir delante de una línea de código en una pantalla 
+					merecían cada minuto que le dedicaba por que el resultado de ver algo construido y funcionando 
+					era muy muy gratificante, aunque el sufrimiento fuera por un juego de hundir la flota..."
+													
+				</p>
+				
+				<p>
+					
+					Ahora una pequeña descripción menos cursi. <br/><br/>
+					Me considero una persona responsable y constante, me gusta trabajar en equipo y echar una mano cuando
+					hace falta, intentando mejorar siempre e intentando conservar la paciencia cuando las cosas
+					se ponen complicadas.
+					
+				</p>
+				
+				
 				
 			</article>
 			
@@ -133,21 +177,30 @@
 				<br/>
 				
 				<button class="btn" data-toggle="collapse" data-target="#listaSeg">Seguridad Informática</button>
+				<ul class="collapse" id="listaSeg">
+					<li>Analisis de vulnerabilidades</li>
+					<li>Explotación de vulnerabilidades</li>
+					<li>Web hacking</li>
+					<li>Exploits</li>
+					<li>Spoofing</li>
+				</ul>
 				<br/>
 				
-				<span  style="position: fixed; bottom: 0; margin-left: auto; margin-right: auto;">
-					Puedes descargar mi CV <a href="doc/CV.pdf">aquí</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+				<span  style="position: fixed; bottom: 0; right: 2px;">
+					Puedes descargar mi CV <a href="doc/CV.pdf" target="_blank">aquí</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
 				</span>
 
 			</article>
+			
+			<article id="capa_4" class="capaDinamica">Seccion en mantenimiento...</article>
 
-			<article id="capa_4" class=" container-fluid, capaDinamica"> 			
+			<article id="capa_5" class="capaDinamica"> 			
 				
-				<br/><h2>Ponte en contacto.</h2><br/>
+				<br/><h2 class="titulo">Ponte en contacto.</h2><br/>
 				
 				<div class="row">
 					<label class="col-2">Email:</label>
-					<a class="col-3" href="mailto:albertotg17@gmail.com" target="_blank">
+					<a class="col-4" href="mailto:albertotg17@gmail.com" target="_blank">
 						<i class="icon fa fa-envelope"></i>&nbsp;albertotg17@gmail.com
 					</a>
 					
@@ -155,21 +208,21 @@
 				
 				<div class="row">
 					<label class="col-2">Facebook:</label>
-					<a class="col-3" href="https://www.facebook.com/alberto.tostadogarcia.5" target="_blank">
+					<a class="col-4" href="https://www.facebook.com/alberto.tostadogarcia.5" target="_blank">
 						<i class="fa fa-facebook-official"></i>&nbsp;Alberto Tostado García
 					</a>
 				</div>
 				
 				<div class="row">
 					<label class="col-2">Github:</label>
-					<a class="col-3" href="https://github.com/AlbertoTG17" target="_blank">
+					<a class="col-4" href="https://github.com/AlbertoTG17" target="_blank">
 						<i class="fa fa-github"></i>&nbsp;AlbertoTG17
 					</a>
 				</div>
 				
 				<div class="row">
 					<label class="col-2">Linkedin:</label>
-					<a class="col-3" href="" target="_blank">
+					<a class="col-4" href="https://www.linkedin.com/in/alberto-tostado-garc%C3%ADa-10408a155" target="_blank">
 						<i class="fa fa-linkedin" ></i>&nbsp;Alberto Tostado García
 					</a>
 				</div>

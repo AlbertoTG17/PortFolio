@@ -8,7 +8,11 @@
 	}
 	
 	h2{
-		font-size: 1rem;
+		font-size: 1.1rem;
+	}
+	
+	h3{
+		font-size: 0.9rem;
 	}
 	
 	h4{
@@ -47,17 +51,17 @@ aside{
 	padding: 2px!important;	
 	position: fixed;
 	background-image: url("../img/fondo_aside.jpg");
-	
-	
+		
 }
 
 section{
 	
-	padding: 2% 5%;
+	/*padding: 2% 5%;*/
 	overflow: auto;
-	background: url("../img/551978.jpg") no-repeat center center fixed;
+	background: url("../img/fondo_section.jpg") no-repeat center center fixed;
 	background-size: cover;
-	color: ;
+	color: white;
+	
 }
 
 
@@ -73,9 +77,13 @@ footer{
 
 
 a{
-	color: black;
+	color: white;
 	cursor: pointer;
 	
+}
+
+a:hover{
+	color: red;
 }
 
 h4{
@@ -83,9 +91,6 @@ h4{
 	font-size: 1.1rem;
 		
 }
-
-
-
 
 #presentacion *{
 	margin-left: auto;
@@ -110,18 +115,39 @@ h4{
 	padding-top: 6%;
 	padding-left: 5%;
 	padding-right: 5%;
+	width: 50%;
+	
+}
+
+#capa_2{
+	
+	padding-left: 4%;
+	padding-bottom: 3%;
+	padding-top: 4%;
+	font-size: 1.1rem;
+	color: white;
+	width: 48%;
 	
 }
 
 #capa_3{
 	padding-left: 5%;
+	padding-bottom: 7%;
+	padding-top: 6%;
+	font-size: 1.1rem;
+}
+
+#capa_5{
+	padding-left: 4%;
 	padding-bottom: 3%;
 	font-size: 1.1rem;
 }
 
-
-
-
+.titulo{	
+	color: red;
+	font-weight: bold;
+	font-size: 1.9rem;
+}
 
 .btn {
   background: #a51a1a;
@@ -147,9 +173,6 @@ h4{
   text-decoration: none;
 }
 
-.colorMenu{
-	color: #a51a1a;
-	font-weight: bold;
-}
+
 
 
