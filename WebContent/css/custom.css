@@ -130,12 +130,19 @@ h4{
 	
 }
 
+
+
 #capa_3{
-	padding-left: 5%;
-	padding-bottom: 7%;
-	padding-top: 6%;
-	font-size: 1.1rem;
+	padding: 6% 6%;	
+	
 }
+
+#capa_3 div div{
+	padding: 4% 4%;	
+	
+}
+
+
 
 #capa_5{
 	padding-left: 4%;
